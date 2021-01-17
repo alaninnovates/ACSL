@@ -1,2 +1,2 @@
 # run="python handler.py"
-run="python class1/main.py"
+run="cd class1 && python main.py"
