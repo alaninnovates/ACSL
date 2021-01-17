@@ -1,2 +1,3 @@
 # run="python handler.py"
-run="cd class1 && python main.py"
+# run="cd class1 && python main.py"
+run="python main.py"
