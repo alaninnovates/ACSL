@@ -1,5 +1,5 @@
-classToRun = input('What class: ')
 import os
+classToRun = input('What class: ')
 os.chdir('class' + classToRun)
 os.system('python main.py')
 '''

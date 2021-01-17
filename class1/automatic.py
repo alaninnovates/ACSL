@@ -1,13 +1,24 @@
 from prettytable import PrettyTable
 from transform import transform
 
+def getFile(fname):
+    f = open(fname)
+    read = f.read()
+    arr = read.split('\n')
+    return arr
+
 def main():
+    '''
     expectedf = open('./expected.txt')
     expected = expectedf.read()
     expectedArray = expected.split('\n')
     f = open('./one.txt')
     testCases = f.read()
     testCasesArray = testCases.split('\n')
+    '''
+    expectedArray = getFile('./expected.txt')
+    testCasesArray = getFile('./one.txt')
+
     table = PrettyTable()
     table.field_names = ['Test Case', 'Result', 'Expected', 'Success']
     for i in range(len(testCasesArray)):
