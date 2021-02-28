@@ -25,6 +25,7 @@ def transform(nstr, pos, dnum):
         return newVal
 
     elif posValue in range(5, 9+1):
+        # this check is not needed
         # print('two')
         # get absolute value
         abv = abs(posValue-dnum)
