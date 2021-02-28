@@ -1,6 +1,6 @@
 import os
-classToRun = input('What class: ')
-os.chdir('class' + classToRun)
+classToRun = input('Input meeting/class number: ')
+os.chdir(f'class{classToRun}')
 os.system('python main.py')
 '''
 with open('./class' + classToRun + '/main.py') as f:
